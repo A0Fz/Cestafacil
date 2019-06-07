@@ -14,7 +14,20 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { 
+    path: 'configuracao', 
+    loadChildren: './configuracao/configuracao.module#ConfiguracaoPageModule' 
+  },
+  { 
+   path: 'sobre',
+   loadChildren: './sobre/sobre.module#SobrePageModule' 
+  },
+  { path: 'carrinho', 
+    loadChildren: './carrinho/carrinho.module#CarrinhoPageModule' },
+    
+  { path: 'cadastrese', 
+    loadChildren: './cadastrese/cadastrese.module#CadastresePageModule' }
 ];
 
 @NgModule({

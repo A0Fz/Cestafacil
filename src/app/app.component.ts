@@ -13,15 +13,30 @@ export class AppComponent {
     {
       title: 'Home',
       url: '/home',
-      icon: 'home'
+      icon: 'Home'
     },
     {
-      title: 'List',
+      title: 'Carrinho',
+      url: '/carrinho',
+      icon: 'cart' 
+    },
+    {
+      title: 'Conta',
       url: '/list',
-      icon: 'list'
-    }
+      icon: 'contact'
+    },
+    {
+      title: 'Configuração',
+      url: '/configuracao',
+      icon: 'settings'
+    },
+    {
+      title: 'Sobre',
+      url: '/sobre',
+      icon: 'help-circle'
+    },
   ];
-
+  
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
