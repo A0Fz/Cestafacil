@@ -1,13 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cadastrese</ion-title>
+    <ion-title>Cadastro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-      <ion-card id="cardnamefull">  
+      <ion-card id="cardname">  
         <ion-item lines="none" id="nome">
-          <ion-input clearInput placeholder="Nome completo"></ion-input>
+          <ion-input clearInput placeholder="Nome"></ion-input>
+        </ion-item>
+      </ion-card>    
+      <ion-card id="cardsobrenome">  
+        <ion-item lines="none" id="sobrenome">
+          <ion-input clearInput placeholder="Sobrenome"></ion-input>
         </ion-item>
       </ion-card>    
       <ion-card id="cardemail">  
@@ -20,4 +25,35 @@
           <ion-input clearInput placeholder="Usuario"></ion-input>
         </ion-item>
       </ion-card>  
+      <ion-card id="cardsenha">  
+        <ion-item lines="none" id="senha" >
+          <ion-input type="password" clearInput placeholder="Senha"></ion-input>
+        </ion-item>
+      </ion-card>  
+      <ion-card id="cardcep">  
+        <ion-item lines="none" id="cep" >
+          <ion-input type="number" [(ngModel)]="cep"clearInput placeholder="CEP"></ion-input>
+        </ion-item>
+      </ion-card> 
+      <ion-card id="cardlogradouro">  
+        <ion-item lines="none" id="Logradouro" >
+          <ion-input clearInput placeholder="{{Logradouro}}"></ion-input>
+        </ion-item>
+      </ion-card> 
+      <ion-card id="cardbairro">  
+        <ion-item lines="none" id="bairro" >
+          <ion-input clearInput placeholder="{{Bairro}}"></ion-input>
+        </ion-item>
+      </ion-card>
+      <ion-card id="cardcidade">  
+        <ion-item lines="none" id="cidade" >
+          <ion-input clearInput placeholder="{{Cidade}}"></ion-input>
+        </ion-item>
+      </ion-card>
+      <ion-card id="cardestado">  
+        <ion-item lines="none" id="estado" >
+          <ion-input clearInput placeholder="{{Estado}}"></ion-input>
+        </ion-item>
+      </ion-card>
+      
 </ion-content>
