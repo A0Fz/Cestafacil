@@ -25,11 +25,10 @@ const routes: Routes = [
   },
   { path: 'carrinho', 
     loadChildren: './carrinho/carrinho.module#CarrinhoPageModule' },
-    
-  { path: 'cadastrese', 
+   
+ {  path: 'cadastrese', 
     loadChildren: './cadastrese/cadastrese.module#CadastresePageModule' }
-];
-
+  ]
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })

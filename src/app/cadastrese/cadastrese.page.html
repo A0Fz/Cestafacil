@@ -32,27 +32,27 @@
       </ion-card>  
       <ion-card id="cardcep">  
         <ion-item lines="none" id="cep" >
-          <ion-input type="number" [(ngModel)]="cep"clearInput placeholder="CEP"></ion-input>
+          <ion-input type="text" [(ngModel)]="cep" maxleingth="8" (keyup)="autoPreenchimento()" autofocus clearInput placeholder="CEP"></ion-input>
         </ion-item>
       </ion-card> 
       <ion-card id="cardlogradouro">  
         <ion-item lines="none" id="Logradouro" >
-          <ion-input clearInput placeholder="{{Logradouro}}"></ion-input>
+          <ion-input clearInput placeholder="Logradouro" [(ngModel)]="logradouro"></ion-input>
         </ion-item>
       </ion-card> 
       <ion-card id="cardbairro">  
         <ion-item lines="none" id="bairro" >
-          <ion-input clearInput placeholder="{{Bairro}}"></ion-input>
+          <ion-input clearInput placeholder="Bairro">{{bairro}}</ion-input>
         </ion-item>
       </ion-card>
       <ion-card id="cardcidade">  
         <ion-item lines="none" id="cidade" >
-          <ion-input clearInput placeholder="{{Cidade}}"></ion-input>
+          <ion-input clearInput placeholder="Cidade">{{cidade}}</ion-input>
         </ion-item>
       </ion-card>
       <ion-card id="cardestado">  
         <ion-item lines="none" id="estado" >
-          <ion-input clearInput placeholder="{{Estado}}"></ion-input>
+          <ion-input clearInput placeholder="Estado">{{estado}}</ion-input>
         </ion-item>
       </ion-card>
       
