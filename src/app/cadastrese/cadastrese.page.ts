@@ -16,7 +16,7 @@ export class CadastresePage implements OnInit {
   bairro:string;
   cidade:string;
   estado:string;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private cepsProvider: CorreiosService) { }
+  constructor(private cepsProvider: CorreiosService) { }
 
   ngOnInit() {
   }
